@@ -31,7 +31,7 @@ body{
 }
 
 .sidebar__title h1{
-	font-family: 'Fredoka_One';
+	font-family: 'Sniglet';
 	font-weight: normal;
 	font-size: 25px;
 	color: #f2f5f9;
@@ -39,7 +39,7 @@ body{
 }
 
 .sidebar__title h2{
-	font-family: 'Fredoka_One';
+	font-family: 'Sniglet';
 	font-weight: 300;
 	font-size: 40px;
 	color: white;
@@ -60,7 +60,7 @@ body{
 }
 
 .sidebar__description h1{
-	font-family: 'Fredoka_One';
+	font-family: 'Sniglet';
 	font-size: 28px;
 	color: #f2f5f9;
 	font-weight: 300;
@@ -74,7 +74,7 @@ body{
 
 
 .sidebar__description ul li {
-	font-family: 'Josefin_Sans';
+	font-family: 'Josefin Sans';
 	color: #f2f5f9;
 	font-weight: 300;
 	margin-bottom: 5px;
@@ -125,7 +125,7 @@ body{
 } */
 
 .projects__title h1{
-	font-family: 'Fredoka_One';
+	font-family: 'Sniglet';
 	font-weight: 300;
 	color: #5b5f66;
 	font-size: 40px;
@@ -181,7 +181,7 @@ body{
 
 .content__description p{
 	color: #5b5f66;
-	font-family: 'Fredoka_One';
+	font-family: 'Sniglet';
 	font-size: 30px;
 	line-height: 30px;
 	width: 70%;
