@@ -1,9 +1,26 @@
 ---
-layout: basic
+layout: home
+permalink: "/"
 title: "Margo Kersey"
-date: 2018-11-28T15:15:34+10:00
-permalink: "/home/"
-description: "Hi, I'm Margo! I'm a research data analyst at the UCSF Dyslexia Center in San Francisco, CA."
-image: "/assets/images/gen/content/MargoKersey.jpg"
----
+description: "Hi! My name's Margo and I'm a research data analyst at the UCSF Dyslexia Center."
+subscribe: false
+image: "assets/images/team/MargoKersey.jpg"
 
+projects:
+  heading: "" # "Projects"
+  sub_heading: "" # "A collection of our recent work"
+  limit: 4
+  sort: date # date | weight
+  view_more_button_text: "" # "More Projects"
+  view_more_button_link: "" # "/projects"
+  columns: 2 # 1 | 2 | 3 | 4
+
+posts:
+  heading: "Recent Posts"
+  sub_heading: ""
+  limit: 3
+  sort: date # date | weight
+  view_more_button_text: ""
+  view_more_button_link: "" # "/blog"
+  columns: 3 # 1 | 2 | 3 | 4
+---

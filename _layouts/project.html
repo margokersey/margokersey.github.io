@@ -54,19 +54,30 @@ body_classes: page-project
     <div class="row">
       <div class="col">
         <div class="gallery gallery-masonry">
-          {% for item in page.gallery limit: limit %}
-            <div class="gallery-item">
-              <div class="gallery-image"><img src="{{ item.image | relative_url }}"/></div>
-              {% if item.caption %}
-              <div class="gallery-caption">{{ item.caption }}</div>
-              {% endif %}
-            </div>
+          {% for item in page.gallery %}
+            {% if item.movie %}
+              <div class="gallery-item">
+                <video controls>
+                  <source src="{{ item.movie | relative_url }}" type="video/quicktime">
+                  Your browser does not support the video tag.
+                </video>
+                {% if item.caption %}
+                  <div class="gallery-caption">{{ item.caption }}</div>
+                {% endif %}
+              </div>
+            {% endif %}
+            {% if item.image %}
+              <div class="gallery-item">
+                <div class="gallery-image"><img src="{{ item.image | relative_url }}" alt="Gallery Image"/></div>
+                {% if item.caption %}
+                  <div class="gallery-caption">{{ item.caption }}</div>
+                {% endif %}
+              </div>
+            {% endif %}
           {% endfor %}
         </div>
       </div>
     </div>
-  </div>
-</div>
 
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
@@ -74,8 +85,8 @@ body_classes: page-project
   var grid = document.querySelector('.gallery');
   var msnry;
 
-  imagesLoaded( grid, function() {
-    msnry = new Masonry( grid, {
+  imagesLoaded(grid, function() {
+    msnry = new Masonry(grid, {
       itemSelector: '.gallery-item',
       percentPosition: true,
     });
