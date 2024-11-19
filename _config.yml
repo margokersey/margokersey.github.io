@@ -170,11 +170,11 @@ menu:
 
 footer:
   enable_footer: true # show/hide the entire footer
-  footer_title: ""
+  footer_title: "Connect"
   enable_social_media_icons: true
   enable_contact_details: false
-  enable_menu_footer_primary: true
-  enable_menu_footer_secondary: true
+  enable_menu_footer_primary: false
+  enable_menu_footer_secondary: false
   enable_menu_footer_tertiary: false
 
 bottom:
