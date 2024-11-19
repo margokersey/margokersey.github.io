@@ -3,6 +3,10 @@
     <div class="row">
 
         <div class="col-12 col-md-4">
+          {% if site.footer.enable_social_media_icons and site.data.social %}
+            {% include framework/social.html %}
+          {% endif %}
+          
           <div class="footer-info">
             {% if site.footer.footer_title and site.footer.footer_title != "" %}
               <h2>{{ site.footer.footer_title }}</h2>
@@ -13,9 +17,6 @@
             {% endif %}
           </div>
 
-          {% if site.footer.enable_social_media_icons and site.data.social %}
-            {% include framework/social.html %}
-          {% endif %}
           {% if site.darkmode.enable_dark_mode and site.darkmode.show_dark_mode_toggle_in_footer %}
             {% include framework/dark-mode-switcher.html %}
           {% endif %}

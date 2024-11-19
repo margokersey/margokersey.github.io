@@ -8,5 +8,5 @@ pdf: "assets/images/gen/content/MKersey_CV_Oct2024.pdf"
 ---
 
 <div class="pdf-container">
-  <embed src="{{ page.pdf | relative_url }}" type="application/pdf" width="100%" height="600px" />
+  <embed src="{{ page.pdf | relative_url }}" type="application/pdf" width="100%" height="1000px" />
 </div>

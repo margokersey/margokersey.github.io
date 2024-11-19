@@ -2,7 +2,7 @@
 layout: project # alternative layouts: project, project-left, project-right, project-top
 title: "Data Visualization Browser"
 description: "Accessible navigation of neuroimaging and neuropsychological data"
-date: 2018-12-20
+date: 2024-01-15
 weight: 3
 thumbnail: "/assets/images/gen/projects/ucsfneuroviz-thumbnail.png"
 image: "/assets/images/gen/projects/ucsfneuroviz-thumbnail.png"

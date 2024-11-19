@@ -54,7 +54,7 @@
     h3 {
       font-weight: 700;
       font-size: 23px;
-      margin-bottom: 7px;
+      margin-bottom: 20px; /* Increase the margin-bottom for more space */
       color: inherit;
     }
 
@@ -65,7 +65,7 @@
   }
 
   .footer-info + .social {
-    margin-top: 30px;
+    margin-top: 40px; /* Increase the margin-top for more space */
   }
 
   .contact {
@@ -93,7 +93,7 @@
     display: flex;
     justify-content: space-around; /* Distribute space evenly around the icons */
     align-items: center; /* Center the icons vertically */
-  
+
     a {
       font-size: 2em; /* Increase the font size */
       display: inline-flex;
@@ -103,7 +103,7 @@
       height: 40px; /* Adjust the height */
       margin: 0 10px; /* Add margin to prevent overlapping */
     }
-  
+
     a i {
       font-size: inherit; /* Inherit the font size from the parent */
     }
