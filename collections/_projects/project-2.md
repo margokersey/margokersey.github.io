@@ -9,5 +9,5 @@ thumbnail: "/assets/images/gen/projects/CNS_Poster_2024_Highest_Quality.png"
 # categories: ["Development"]
 # role: ""
 gallery:
-  - image: "/assets/images/gen/projects/CNS_Poster_2024_Highest_Quality.png
+  - image: "/assets/images/gen/projects/CNS_Poster_2024_Highest_Quality.png"
 ---

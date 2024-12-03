@@ -5,6 +5,25 @@ body_classes: page-project
 
 {% assign limit = page.gallery_limit | default: 6 %}
 
+<style>
+  .gallery.gallery-masonry .gallery-image img {
+    width: auto; /* Maintain aspect ratio for width */
+    height: 450px; /* Set the height to 600px */
+    object-fit: cover; /* Ensure the image fits within the dimensions */
+  }
+
+  /* Optional: Ensure gallery-item uses proper spacing */
+  .gallery.gallery-masonry .gallery-item {
+    margin-bottom: 20px;
+  }
+</style>
+
+<style>
+  .page-project .gallery-masonry .gallery-item {
+    width: 100% !important; /* Override the existing 50% width */
+  }
+</style>
+
 <div class="section">
   <div class="container">
     <div class="row">
@@ -68,7 +87,7 @@ body_classes: page-project
             {% endif %}
             {% if item.image %}
               <div class="gallery-item">
-                <div class="gallery-image"><img src="{{ item.image | relative_url }}" alt="Gallery Image"/></div>
+                <div class="gallery-image"><img src="{{ item.image | relative_url }}" alt="Gallery Image" style="width: 100%; height: auto;"></div>
                 {% if item.caption %}
                   <div class="gallery-caption">{{ item.caption }}</div>
                 {% endif %}
